@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Axios -->
     <script src="https://unpkg.com/axios@1.6.8/dist/axios.min.js"></script>
-    <!-- Java debugging -->
-    <script type="text/javascript" src="js/test.js"></script>
-    <!-- Java data -->
-    <script type="text/javascript" src="js/main.js"></script>
     <!-- Java functions -->
     <script type="text/javascript" src="js/functions.js"></script>
 </head>
@@ -26,7 +22,8 @@
         <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
 
         <div id="vueApp">
-            <button @click="test">Test</button>
+            <h1 v-for="mail in mailList"></h1>
+            <button @click="generaMails">Genera e-Mails</button>
         </div>
 
         <!-- Java -->
